@@ -17,10 +17,8 @@ function createBoxes(amount) {
   for (let i = 0;i<amount;i+=1){
     let divEl = document.createElement('div');
     console.log((parseInt(wi)+i*10)+'px');
-    let divWidth = (parseInt(wi)+i*10)+'px';
-    let divHeight = (parseInt(hi)+i*10)+'px';
-    divEl.style.width=divWidth 
-    divEl.style.height=divHeight 
+    divEl.style.width = (parseInt(wi)+i*10)+'px';
+    divEl.style.height = (parseInt(hi)+i*10)+'px';
     divEl.style.backgroundColor=getRandomHexColor();
     divchik.append(divEl)
   }
