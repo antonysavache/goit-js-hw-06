@@ -13,9 +13,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+images.forEach(i=>{
+  console.log(i.alt)
+  
+})
 const newpics = images
-  .map((image)=>`<li style="display:flex; list-style-type: none; border: 2px solid black">
-  <img   width=100% src=${image.url} alt=${image.alt}>
-  </li>`)
+  .map((image)=>{return `<li style="display:flex; list-style-type: none; border: 2px solid black">
+  <img   width=100% src="${image.url}"" alt="${image.alt}"">
+  </li>`})
   .join("");
   ulka.insertAdjacentHTML("beforeend", newpics);
+
+
